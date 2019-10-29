@@ -1,0 +1,78 @@
+[PMAC_HARDWARE]
+Gate1AutoDetect=0x0
+Gate2AutoDetect=0x0
+Gate3AutoDetect=0x3
+CardIOAutoDetect=0x0
+CardDPRAutoDetect=0x0
+[PMAC_CONFIG]
+// *** EOF 
+Successful Configuration using "/var/ftp/usrflash/Project/Configuration/pp_save.cfg"
+// *** EOF 
+Successful Custom Configuration using "/var/ftp/usrflash/Project/Configuration/pp_custom_save.cfg"
+[PMAC_PROJECT]
+Start of Project Loading using INI File: "/var/ftp/usrflash/Project/Configuration/pp_proj.ini"
+Including Project File: /var/ftp/usrflash/Project/Configuration/pp_disable.txt 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/global definitions.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/output.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/poweronresetsub.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/subprog1.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/timer.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Motion Programs/prog1.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Motion Programs/prog2.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Motion Programs/prog3.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Motion Programs/prog4.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Motion Programs/prog5.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Motion Programs/prog6.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/alpha.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/gantrysafety.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/homingx.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/homingy.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/homingz.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/k.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/plc1.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/plc2.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/plc3.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/raisez.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/x.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/y.plc 
+Including Project File: /var/ftp/usrflash/Project/Configuration/pp_startup.txt 
+33 Project Symbols were created for gpascii -2 communication
+Status: Successful load of preprocessed File: "/var/ftp/usrflash/Temp/pp_proj.pma"
+[PMAC_PROJECT]
+Start of Project Loading using INI File: "/var/ftp/usrflash/Project/Configuration/pp_proj.ini"
+LoadRTUserCode() Delta Time (sec) = 0.063192
+Including Project File: /var/ftp/usrflash/Project/Configuration/pp_disable.txt 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/global definitions.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/output.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/poweronresetsub.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/subprog1.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/timer.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Motion Programs/prog1.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Motion Programs/prog2.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Motion Programs/prog3.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Motion Programs/prog4.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Motion Programs/prog5.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Motion Programs/prog6.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Motion Programs/prog7.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/alpha.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/gantrysafety.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/homingx.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/homingy.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/homingz.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/k.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/plc1.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/plc2.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/plc3.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/plc4.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/raisez.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/x.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/y.plc 
+Including Project File: /var/ftp/usrflash/Project/Configuration/pp_startup.txt 
+Status: Pass 1 Create debug file, #defines, *.h & .sym files, Time (sec) = 0.082937
+Status: Pass 2 Verify prog calls, local stack & labels, Time (sec)  = 0.006655
+33 Project Symbols were created for gpascii -2 communication
+Status: Create PPMAC Symbol Table & Run CPP Time (sec) = 0.239060
+Status: Successful load of preprocessed File: "/var/ftp/usrflash/Temp/pp_proj.pma"
+Status: Download to PPMAC Command Processor, Time (sec) = 0.008753
+Status: Final pp_proj.h & Run Background C Apps, Time (sec) = 0.178687
+Project Preprocessing & Load Total Time (sec) = 0.579928

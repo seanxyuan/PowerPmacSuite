@@ -1,0 +1,41 @@
+In file included from /usr/local/dtlibs/rtpmac/RtGpShm.h:82,
+                 from /usr/local/dtlibs/libppmac/gplib.h:32,
+                 from capp1.c:1:
+/usr/local/dtlibs/rtpmac/../libppmac/ethernetip.h:12:26: error: opener_api.h: No such file or directory
+/usr/local/dtlibs/rtpmac/../libppmac/ethernetip.h:13:25: error: cipcommon.h: No such file or directory
+In file included from /usr/local/dtlibs/rtpmac/RtGpShm.h:82,
+                 from /usr/local/dtlibs/libppmac/gplib.h:32,
+                 from capp1.c:1:
+/usr/local/dtlibs/rtpmac/../libppmac/ethernetip.h:29: error: 'MAX_EIP_CONFIG_MEM' undeclared here (not in a function)
+/usr/local/dtlibs/rtpmac/../libppmac/ethernetip.h:43: error: expected specifier-qualifier-list before 'EipUint32'
+/usr/local/dtlibs/rtpmac/../libppmac/ethernetip.h:52: error: 'MAX_EIP_ITEMS' undeclared here (not in a function)
+/usr/local/dtlibs/rtpmac/../libppmac/ethernetip.h:69: error: 'MAX_EIP_IO_MEM' undeclared here (not in a function)
+/usr/local/dtlibs/rtpmac/../libppmac/ethernetip.h:70: error: 'MAX_EIP_IO_MEM_16' undeclared here (not in a function)
+/usr/local/dtlibs/rtpmac/../libppmac/ethernetip.h:71: error: 'MAX_EIP_IO_MEM_32' undeclared here (not in a function)
+/usr/local/dtlibs/rtpmac/../libppmac/ethernetip.h:74: error: 'MAX_EIP_IO_MEM_64' undeclared here (not in a function)
+/usr/local/dtlibs/rtpmac/../libppmac/ethernetip.h:97: error: 'MAX_EIP_CONN' undeclared here (not in a function)
+/usr/local/dtlibs/rtpmac/../libppmac/ethernetip.h:101: error: 'MAX_EIP_DNAME' undeclared here (not in a function)
+/usr/local/dtlibs/rtpmac/../libppmac/ethernetip.h:118: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'InitializeEthernetIp'
+/usr/local/dtlibs/rtpmac/../libppmac/ethernetip.h:119: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'LoadEthernetIpConfig'
+/usr/local/dtlibs/rtpmac/../libppmac/ethernetip.h:131: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'InitEthernetIp'
+/usr/local/dtlibs/rtpmac/../libppmac/ethernetip.h:136: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'CloseEthernetIp'
+/usr/local/dtlibs/rtpmac/../libppmac/ethernetip.h:137: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'ResetDevice'
+/usr/local/dtlibs/rtpmac/../libppmac/ethernetip.h:138: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'ResetDeviceToInitialConfiguration'
+/usr/local/dtlibs/rtpmac/../libppmac/ethernetip.h:142: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'UpdateEthernetIp'
+In file included from /usr/local/dtlibs/libppmac/gplib.h:45,
+                 from capp1.c:1:
+/usr/local/dtlibs/libppmac/eip.h:11:24: error: opener_api.h: No such file or directory
+In file included from /usr/local/dtlibs/libppmac/gplib.h:45,
+                 from capp1.c:1:
+/usr/local/dtlibs/libppmac/eip.h:32: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'EipSaveConfiguration'
+/usr/local/dtlibs/libppmac/eip.h:39: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'EipSaveDeviceTables'
+/usr/local/dtlibs/libppmac/eip.h:47: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'EipClearDeviceTables'
+/usr/local/dtlibs/libppmac/eip.h:55: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'EipClearConnDeviceTables'
+/usr/local/dtlibs/libppmac/eip.h:63: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'EipDeleteDeviceTables'
+/usr/local/dtlibs/libppmac/eip.h:70: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'EipLoadDeviceTables'
+/usr/local/dtlibs/libppmac/eip.h:78: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'EipSaveConnDeviceTables'
+/usr/local/dtlibs/libppmac/eip.h:86: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'EipLoadConnDeviceTables'
+/usr/local/dtlibs/libppmac/eip.h:122: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'EipSaveIPConfig'
+In file included from capp1.c:1:
+/usr/local/dtlibs/libppmac/gplib.h:47:30: error: networkhandler.h: No such file or directory
+make: *** [capp1.o] Error 1

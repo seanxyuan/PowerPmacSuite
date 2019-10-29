@@ -1,0 +1,66 @@
+// Power PMAC PROGRAM Template.
+// The following Sample PROGRAM is the standard template for creating Motion Programs.
+// Sample PROGRAM
+/****************************************/
+undefine all
+&1
+#1->1711 X //1 mm
+#8->1366 Y //1 mm
+#7->455 a
+
+
+open prog 7
+// --------------------User Code Goes Here------------------------
+linear
+abs
+
+ta 500
+ts 500
+tm 15427 //final
+
+Y 0  //we are starting from middle of Y-axis side, 850mm from corner point
+
+linear
+
+abs
+
+ta 500
+ts 500
+tm 10358 //final
+
+a -90  //radious 199.136mm , C=1251.21*(61.57/360) = 214mm -Using speed of 25mm/sec -> t=8560
+
+linear
+
+abs
+
+ta 500
+ts 500
+tm 4537 //final
+
+X -125
+
+linear
+
+abs
+
+ta 500
+ts 500
+tm 13600 //final
+
+Y 425
+
+linear
+
+abs
+ 
+ta 500
+ts 500
+tm 11984 //final
+
+a 0
+
+
+close
+/****************************************/
+

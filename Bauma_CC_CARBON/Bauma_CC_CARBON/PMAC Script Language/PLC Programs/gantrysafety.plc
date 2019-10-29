@@ -1,0 +1,59 @@
+// Power PMAC Script PLC Program Template.
+// The following Sample PLC PROGRAM is the standard template for creating Script PLC Programs.
+// Sample PLC PROGRAM
+/****************************************/
+global GantryMonitor = 0;
+global Gantryfailure = 0;
+global Max1IqMeas = 0;
+global Max4IqMeas = 0;
+global Max2IqMeas = 0;
+global Max8IqMeas = 0;
+global Max6IqMeas = 0;
+global Max7IqMeas = 0;
+global MaxPwM = 0;
+global MaxPwoM = 0;
+open plc gantrysafety
+if(E_Stop == 0){
+	kill 1,2,3,4,5,6,7,8;
+	//sys = 0;
+	//cut = 0;
+	//doser = 0;
+	//wet = 0;
+	//pump = 0;
+	E_Led = 1;
+	call Timer(0.05);
+	E_Led = 0;
+	call Timer(0.05);
+	
+}
+else{
+	E_Led = 0;
+	GantryMonitor++;
+	if((Motor[1].I2tFault==1)||(Motor[4].I2tFault==1)||(Motor[1].AmpFault==1)||(Motor[4].AmpFault==1)){
+		kill 1,4;
+		Gantryfailure = 1;
+	}
+
+	if((abs(Motor[1].Pos-Motor[4].Pos)>=15000)){
+		kill 1,4;
+		Gantryfailure = 14;
+	}
+	if ((Motor[2].I2tFault==1)||(Motor[2].AmpFault==1)){
+		kill 2;
+		Gantryfailure = 2;
+	}
+	else Gantryfailure = 0;
+}
+
+if (abs(motor[1].IqMeas)>Max1IqMeas)	Max1IqMeas = abs(motor[1].IqMeas);
+if (abs(motor[4].IqMeas)>Max4IqMeas)	Max4IqMeas = abs(motor[4].IqMeas);
+if (abs(motor[2].IqMeas)>Max2IqMeas)	Max2IqMeas = abs(motor[2].IqMeas);
+if (abs(motor[8].IqMeas)>Max8IqMeas)	Max8IqMeas = abs(motor[8].IqMeas);
+//if (abs(motor[6].IqMeas)>Max6IqMeas)	Max6IqMeas = abs(motor[6].IqMeas);
+if (abs(motor[7].IqMeas)>Max7IqMeas)	Max7IqMeas = abs(motor[7].IqMeas);
+if (((abs(motor[1].IqMeas)+abs(motor[4].IqMeas)+abs(motor[2].IqMeas))/32768*25*340+(abs(motor[7].IqMeas)+abs(motor[8].IqMeas))/32768*15.625*340)>MaxPwM)	MaxPwM=((abs(motor[1].IqMeas)+abs(motor[4].IqMeas)+abs(motor[2].IqMeas))/32768*25*340+(abs(motor[7].IqMeas)+abs(motor[8].IqMeas))/32768*15.625*340);
+if (((abs(motor[1].IqMeas)+abs(motor[4].IqMeas)+abs(motor[2].IqMeas))/32768*25*340+(abs(motor[7].IqMeas)+abs(motor[8].IqMeas))/32768*15.625*340)>MaxPwoM)	MaxPwoM=((abs(motor[1].IqMeas)+abs(motor[4].IqMeas)+abs(motor[2].IqMeas))/32768*25*340+(abs(motor[7].IqMeas)+abs(motor[8].IqMeas))/32768*15.625*340);
+
+
+close
+/****************************************/

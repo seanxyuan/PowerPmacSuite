@@ -1,0 +1,4 @@
+open subprog Timer(duration)
+local EndTime = Sys.Time + duration; // "local" variable to store end time
+while(Sys.Time < EndTime){}
+close

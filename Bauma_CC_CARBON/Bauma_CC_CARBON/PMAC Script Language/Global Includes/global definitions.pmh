@@ -1,0 +1,46 @@
+motor[2].pBrakeOut =  PowerBrick[0].GpioData[0].a
+motor[2].BrakeOutBit = 21
+motor[4].ServoCtrl = 8
+motor[4].CmdMotor=1
+//enable plc gantrysafety
+/*Motor[3].pLimits = 0
+Motor[3].FatalFeLimit=0
+Motor[3].AdcMask = $FFF00000
+Motor[3].AmpFaultLevel = 1
+Motor[3].PhaseCtrl = 4
+Motor[3].PhaseMode = 3
+Motor[3].PhaseOffset = 512
+Motor[3].PhasePosSf = 0
+Motor[3].PwmSf = 16384*/
+enable plc gantrysafety
+//set external relay for braking
+//Motor[2].pBrakeOut=PowerBrick[0].GpioData[0].a
+//Motor[2].BrakeOutBit=16
+//Motor[2].pBrakeOut=0
+//Set gantry leader and follower
+//Motor[4].ServoCtrl=8
+//Motor[4].CmdMotor=1
+/*
+Motor[7].pLimits = 0
+Motor[7].FatalFeLimit=0
+Motor[7].AdcMask = $FFF00000
+Motor[7].AmpFaultLevel = 1
+Motor[7].PhaseCtrl = 4
+Motor[7].PhaseMode = 3
+Motor[7].PhaseOffset = 512
+Motor[7].PhasePosSf = 0
+Motor[7].PwmSf = 16384
+
+Motor[8].pLimits = 0
+Motor[8].FatalFeLimit=0
+Motor[8].AdcMask = $FFF00000
+Motor[8].AmpFaultLevel = 1
+Motor[8].PhaseCtrl = 4
+Motor[8].PhaseMode = 3
+Motor[8].PhaseOffset = 512
+Motor[8].PhasePosSf = 0
+Motor[8].PwmSf = 16384
+
+*/
+
+

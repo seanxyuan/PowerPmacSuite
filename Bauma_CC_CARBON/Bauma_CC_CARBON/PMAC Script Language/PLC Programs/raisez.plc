@@ -1,0 +1,22 @@
+// Power PMAC Script PLC Program Template.
+// The following Sample PLC PROGRAM is the standard template for creating Script PLC Programs.
+// Sample PLC PROGRAM
+/****************************************/
+open plc raisez
+// --------------------User Code Goes Here------------------------
+
+jog2^(130000);
+local temp2;
+temp2 = motor[2].Pos;
+while (motor[2].Pos - temp2 <120000){}
+call Timer(1);
+kill 2;
+call Timer(2);
+jog2=0;
+while (motor[2].Pos >1000){}
+call Timer(2);
+kill 2;
+disable plc raisez;
+
+close
+/****************************************/

@@ -1,0 +1,23 @@
+open plc plc4 //this will move the machine to starting point for printing (15,10)
+// --------------------User Code Goes Here------------------------
+
+motor[8].JogSpeed=35;
+call Timer(0.1);
+jog7=0;
+call Timer(0.1);
+motor[1].JogSpeed=10
+call Timer(0.1);
+motor[4].JogSpeed=10
+call Timer(0.5);
+pump=1;
+//ali=1
+call Timer(2);
+jog8=-900000;
+call Timer(0.1);
+while(motor[8].Pos > -895000){}
+pump=0;
+call Timer(1);
+jog8=-1000000;
+
+disable plc plc4;
+close

@@ -1,0 +1,22 @@
+// Power PMAC Script PLC Program Template.
+// The following Sample PLC PROGRAM is the standard template for creating Script PLC Programs.
+// Sample PLC PROGRAM
+/****************************************/
+open plc plc2 //this will move the machine to home (0,0)
+// --------------------User Code Goes Here------------------------
+
+motor[8].JogSpeed=50
+call Timer(0.1);
+motor[1].JogSpeed=50
+call Timer(0.1);
+motor[4].JogSpeed=50
+
+call Timer(0.1);
+jog8=0;
+call Timer(0.1);
+jog1=0;
+call Timer(0.1);
+jog7=0;
+disable plc plc2;
+close
+/****************************************/

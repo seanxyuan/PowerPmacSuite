@@ -1,0 +1,15 @@
+// Power PMAC Script PLC Program Template.
+// The following Sample PLC PROGRAM is the standard template for creating Script PLC Programs.
+// Sample PLC PROGRAM
+/****************************************/
+open plc x
+// --------------------User Code Goes Here------------------------
+motor[1].Jogspeed = 60;
+motor[4].Jogspeed = 60;
+jog1 = 10000000;
+while(motor[1].Pos < 9999000){}
+jog1 = 0;
+while(motor[1].Pos > 1000){}
+close
+
+/****************************************/

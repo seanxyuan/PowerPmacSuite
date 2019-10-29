@@ -1,0 +1,20 @@
+
+PTR E_Led->PowerBrick[0].GpioData[0].19.1; 
+
+PTR E_Stop->PowerBrick[1].GpioData[0].0.1;	
+//PTR right->PowerBrick[1].GpioData[0].16.1;
+//PTR left->PowerBrick[1].GpioData[0].17.1;
+//PTR center->PowerBrick[1].GpioData[0].18.1;
+//PTR valve->PowerBrick[1].GpioData[0].19.1;
+PTR sys->PowerBrick[1].GpioData[0].16.1;
+//PTR left->PowerBrick[1].GpioData[0].17.1;
+PTR pump->PowerBrick[1].GpioData[0].18.1;
+PTR admixture->PowerBrick[1].GpioData[0].19.1;
+
+PTR Ch2HomeFlag->PowerBrick[0].Chan[1].HomeFlag; //Motor 2 - Z Axis
+PTR Ch8HomeFlag->PowerBrick[1].Chan[3].HomeFlag; //Motor 8 - Y Axis
+PTR Ch1HomeFlag->PowerBrick[0].Chan[0].HomeFlag; //Motor 1 - X Axis
+PTR Ch4HomeFlag->PowerBrick[0].Chan[3].HomeFlag; //Motor 4 - X Axis
+
+
+
